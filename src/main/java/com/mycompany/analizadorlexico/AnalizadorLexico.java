@@ -15,6 +15,7 @@ public class AnalizadorLexico {
     }
 
     /*
+    Funcion que me recibe una cadena de entra, la cual me analiza los tokens declarados por regex
      */
     public static void analyze(String textoEntrada, JTextArea txtArea2) {
 
@@ -78,7 +79,7 @@ public class AnalizadorLexico {
         StringBuilder result = new StringBuilder();//Almacenar los tokens
         //Recorre cada token 
         for (Token token : tokens) {
-            result.append("Token --> "+token.getType()).append(": ").append(token.getValue()).append("\n");
+            result.append("Token --> " + token.getType()).append(": ").append(token.getValue()).append("\n");
         }
 
         // Muestra el resultado en txtArea2
